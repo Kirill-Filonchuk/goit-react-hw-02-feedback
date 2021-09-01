@@ -38,7 +38,7 @@ class App extends Component {
       // console.log(positivPerc);
       return positivPerc;
     }
-    // or to the string - so, we can do whith out isNaN
+    // or to the string - so, we can do without isNaN
     // const positivPerc = `${Math.floor((this.state.good * 100) / this.totalCount())}`;
     // console.log(positivPerc.length);
     return 0;
