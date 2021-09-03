@@ -13,12 +13,6 @@ class App extends Component {
   };
 
   handleDecrement = e => {
-    console.dir(e.target.name);
-    const target = e.target.name;
-    if (typeof target == 'undefined') {
-      console.dir(target);
-      return;
-    }
     this.setState(() => ({
       [e.target.name]: this.state[e.target.name] + 1,
     }));
@@ -32,10 +26,8 @@ class App extends Component {
   };
 
   positivePercentage = () => {
-    // console.log(this.totalCount());
     if (this.totalCount() > 0) {
       const positivPerc = Math.floor((this.state.good * 100) / this.totalCount());
-      // console.log(positivPerc);
       return positivPerc;
     }
     // or to the string - so, we can do without isNaN
